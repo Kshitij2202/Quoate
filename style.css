@@ -1,98 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    padding: 10px;
+body{
+    background: purple;
 }
-.todo-app{
-    width: 100%;
-    max-width: 540px;
-    background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+.Quote-box{
+    background: white;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
     border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
 }
-.todo-app h2{
-    color: #002765;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.todo-app h2 img{
-    width: 30px;
-    margin-left: 10px;
-}
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
-}
-input{
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-}
-button{
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background: #ff5945;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 40px;
-}
-ul li{
-    list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    cursor: pointer;
+.Quote-box h2{
+    font-size: 40px;
+    margin-bottom: 40px;
     position: relative;
 }
-ul li::before{
+.Quote-box h2::after{
     content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
     position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(images.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
 }
-ul li.checked{
-    color: #002765;
-    text-decoration: line-through;
+.Quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
 }
-ul li.checked::before{
-    background-image: url(images.jpeg);
+.Quote-box blockquote::before, .Quote-box blockquote::after{
+    content: '"';
 }
-ul li span{
+.Quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.Quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23,124,229);
     position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
+    top: 50%;
+    left: -30px;
+}
+.Quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.Quote-box button{
+    background: rgb(23, 124, 229);
+    color: whitesmoke;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
     font-size: 22px;
-    color: #555;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
 }
-ul li span:hover{
-    background: #edeef0;
+.Quote-box button img{
+     width: 20px;
+     margin-right: 10px;
+
 }
+.Quote-box button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
